@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className={styles.footer1} >
 
-        <p>Projeto TOTI 2023 <br/> David Puche <br/> Javier <br/></p>
+        <p>Projeto TOTI 2023 <br/> David Puche <br/> Javier Garcia <br/> Erick Pananzila</p>
         
         <p><a href="site-plan-rafting.html">About Us</a></p>
         <p><a href="contactUs.html">Comprar um Jogo</a></p>
