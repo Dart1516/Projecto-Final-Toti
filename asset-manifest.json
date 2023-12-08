@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Projecto-Final-Toti/static/css/main.9ed61dd5.css",
+    "main.js": "/Projecto-Final-Toti/static/js/main.d5bacfe5.js",
+    "static/js/787.eedb116e.chunk.js": "/Projecto-Final-Toti/static/js/787.eedb116e.chunk.js",
+    "static/media/video1.mp4": "/Projecto-Final-Toti/static/media/video1.bca5bbdebe8e755de6be.mp4",
+    "static/media/historia-moba.jpeg": "/Projecto-Final-Toti/static/media/historia-moba.e2fba38f6bd6db74a12c.jpeg",
+    "static/media/tercerMoba.png": "/Projecto-Final-Toti/static/media/tercerMoba.7067b3bf52c362911b48.png",
+    "static/media/primerMoba.jpg": "/Projecto-Final-Toti/static/media/primerMoba.10b2300b1ba96ab683e7.jpg",
+    "static/media/cuartoMoba.jpg": "/Projecto-Final-Toti/static/media/cuartoMoba.fa670fb3c6a31ed7e411.jpg",
+    "static/media/mapa2.jpg": "/Projecto-Final-Toti/static/media/mapa2.9d899c456fac8199ee62.jpg",
+    "static/media/mapa1.webp": "/Projecto-Final-Toti/static/media/mapa1.faeff3e15cbd642f98d0.webp",
+    "static/media/segundoMoba.jpg": "/Projecto-Final-Toti/static/media/segundoMoba.f5046a557cd5efcdae13.jpg",
+    "static/media/moba0.webp": "/Projecto-Final-Toti/static/media/moba0.3e99e8153f118982d27e.webp",
+    "static/media/logo.svg": "/Projecto-Final-Toti/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Projecto-Final-Toti/index.html",
+    "main.9ed61dd5.css.map": "/Projecto-Final-Toti/static/css/main.9ed61dd5.css.map",
+    "main.d5bacfe5.js.map": "/Projecto-Final-Toti/static/js/main.d5bacfe5.js.map",
+    "787.eedb116e.chunk.js.map": "/Projecto-Final-Toti/static/js/787.eedb116e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ed61dd5.css",
+    "static/js/main.d5bacfe5.js"
+  ]
+}
