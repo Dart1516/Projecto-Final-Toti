@@ -1,0 +1,32 @@
+.main {
+    display: grid; 
+    grid-template-columns: 2% 20% 14% 2% 10% 16% 2%  2% 30% 20% 2%;
+}
+.párrafo1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: rgb(255, 192, 224);
+    flex-direction: column-reverse;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+}
+.párrafo2 {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    color: rgb(218, 195, 218);
+}
+.párrafo3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: rgb(255, 192, 224);
+    flex-direction: column-reverse;
+    grid-row-start: 2 ;
+    grid-row-end: 3 ;
+}
+.infografia{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1 ;
+    grid-row-end: 3 ;
+    width: 100%;
+}
