@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Projecto-Final-Toti/static/css/main.9ed61dd5.css",
+    "main.css": "/Projecto-Final-Toti/static/css/main.32966097.css",
     "main.js": "/Projecto-Final-Toti/static/js/main.06db51ed.js",
     "static/js/787.eedb116e.chunk.js": "/Projecto-Final-Toti/static/js/787.eedb116e.chunk.js",
     "static/media/video1.mp4": "/Projecto-Final-Toti/static/media/video1.bca5bbdebe8e755de6be.mp4",
@@ -14,12 +14,12 @@
     "static/media/moba0.webp": "/Projecto-Final-Toti/static/media/moba0.3e99e8153f118982d27e.webp",
     "static/media/logo.svg": "/Projecto-Final-Toti/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Projecto-Final-Toti/index.html",
-    "main.9ed61dd5.css.map": "/Projecto-Final-Toti/static/css/main.9ed61dd5.css.map",
+    "main.32966097.css.map": "/Projecto-Final-Toti/static/css/main.32966097.css.map",
     "main.06db51ed.js.map": "/Projecto-Final-Toti/static/js/main.06db51ed.js.map",
     "787.eedb116e.chunk.js.map": "/Projecto-Final-Toti/static/js/787.eedb116e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ed61dd5.css",
+    "static/css/main.32966097.css",
     "static/js/main.06db51ed.js"
   ]
 }
