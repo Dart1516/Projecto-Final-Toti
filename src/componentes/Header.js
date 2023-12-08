@@ -8,6 +8,7 @@ const Header = () => {
     <div>
       <header className="Header">
         <Menu />
+        donde aparece esto
       </header>
     </div>
   );
