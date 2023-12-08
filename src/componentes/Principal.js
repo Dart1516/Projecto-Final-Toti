@@ -119,6 +119,7 @@ function Principal() {
           
         </div>
       </main>
+      <p> ESTO DONDE APARECE </p>
     </div>
   );
 }
