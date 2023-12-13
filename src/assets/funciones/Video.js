@@ -1,11 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import video from '../videos/video1.mp4'
+import styles from './Video.module.css'
 
 
 function Video() {
     return (
-        <header >
+        <header  className={styles.video}>
           <ReactPlayer
           className= 'video'
           url={video}

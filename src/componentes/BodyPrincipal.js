@@ -1,16 +1,19 @@
 import React from "react";
-import styles from "../assets/styles/Principal.module.css";
-import moba from "../assets/images/historia-moba.jpeg";
+import styles from "../assets/styles/BodyPrincipal.module.css";
 import moba1 from '../assets/images/primerMoba.jpg'
 import moba2 from '../assets/images/segundoMoba.jpg'
 import moba3 from '../assets/images/tercerMoba.png'
 import moba4 from '..//assets/images/cuartoMoba.jpg'
 import mapa1 from '..//assets/images/mapa1.webp'
 import mapa2 from '../assets/images/mapa2.jpg'
+import Video from "../assets/funciones/Video";
+import Infografia from "../assets/funciones/Infografia";
 
-function Principal() {
+
+function BodyPrincipal() {
   return (
-    <div>
+    <div className={styles.BodyHeader}>
+              <Video />
       <h1> Breve Historia</h1>
       <main className={styles.main}>
         <div className={styles.párrafo1}>
@@ -67,7 +70,13 @@ function Principal() {
             equilibrada.
           </p>
         </div>
-        <img src={moba} className={styles.infografia} alt="infografia" />
+        <div className={styles.infografia}>
+        <Infografia className={styles.infografia} alt="infografia" />
+        </div>
+        
+        
+
+        
         <div className={styles.párrafo2}>
           <h2> História dos MOBAs </h2>
           
@@ -119,9 +128,9 @@ function Principal() {
           
         </div>
       </main>
-      <p> ESTO DONDE APARECE </p>
     </div>
+    
   );
 }
 
-export default Principal;
+export default BodyPrincipal;

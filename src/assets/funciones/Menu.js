@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import styles from "./Menu.module.css";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import { useScrollPosition } from "../../componentes/Hooks/scrollPosition";
 import moba from "../images/moba0.webp";
+import { useScrollPosition } from "../../componentes/Hooks/scrollPosition";
 
 const Menu = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -32,41 +32,45 @@ const Menu = () => {
     {
       id: 1,
       link: "Principal",
+      label: "Principal",
+      route: "/Principal",
     },
     {
       id: 2,
       link: "Jogos",
+      label: "Jogos",
+      route: "/Jogos",
     },
     {
       id: 3,
       link: "FAQ",
+      label: "FAQ",
+      route: "/FAQ",
     },
     {
       id: 4,
       link: "Contato",
+      label: "Contato",
+      route: "/Contato",
     },
   ];
-
   const scrollPosition = useScrollPosition();
-
   return (
     <div
       className={
         navBarOpen
           ? styles.navOpen
-          : scrollPosition > 0
+          : window.scrollY > 0
           ? styles.navOnScroll
           : styles.navBar
       }
     >
-
       {!navBarOpen && windowDimension.width < 800 ? (
-        < CgMenu
+        <CgMenu
           color="#f1f1f1"
           onClick={() => setNavBarOpen(!navBarOpen)}
           size={25}
           className={styles.cerrarMenuAbierto}
-          
         />
       ) : (
         windowDimension.width < 800 && (
@@ -78,61 +82,35 @@ const Menu = () => {
           />
         )
       )}
-      
+
       {!navBarOpen && (
-        
         <div className={styles.logo1}>
-        <img src={moba} className={styles.logoImage} alt="logo" />  
-        <p className={styles.logo}> 
-          {" "}
-           +20 ANOS DE MOBAS{" "}
-        </p>
+          <img src={moba} className={styles.logoImage} alt="logo" />
+          <p className={styles.logo}> +20 ANOS DE MOBAS </p>
         </div>
       )}
-      {navBarOpen && (
+
+      {windowDimension.width > 800 && (
         <ul className={styles.linksContainer}>
-          {links.map(({ id, link }) => (
-            <div>
-              <Link
-                key={id}
+          {links.map(({ link, id, route }) => (
+            <div key={id}>
+              <RouterLink
+                to={route}
                 onClick={() => setNavBarOpen(false)}
-                to={link}
-                smooth
-                duration={5000}
                 className={styles.opciones}
               >
                 {link === "Principal" ? "Página Inicial" : link}
-              </Link>
+              </RouterLink>
               <div className={styles.border}></div>
             </div>
           ))}
-        </ul>
-      )}
-      {windowDimension.width > 800 && (
-        <ul className={styles.linksContainer}>
-          {links.map(({ link, id }) => (
-            <div>
-              <Link
-                onClick={() => setNavBarOpen(false)}
-                to={link}
-                smooth
-                duration={500}
-                className={styles.opciones}
-              >
-                {link === "HowWeWork" ? "How we work" : link}
-              </Link>
-              <div className={styles.border}></div>
-            </div>
-          ))}
-          <Link
+          <RouterLink
+            to="/MinhaConta"
             onClick={() => setNavBarOpen(false)}
-            to="Contact"
-            smooth
-            duration={500}
             className={styles.minhaConta}
           >
             Minha Conta
-          </Link>
+          </RouterLink>
         </ul>
       )}
     </div>
