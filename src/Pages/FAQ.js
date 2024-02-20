@@ -9,7 +9,7 @@ const FAQ  = () => {
         <Menu/>
       </header>
       <body >
-        Javier
+
       </body>
       <footer>
         <Footer/>

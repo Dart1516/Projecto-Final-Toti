@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../assets/styles/BodyJogos.module.css";
 import lol from "../assets/images/lol.webp";
 import dota2 from "../assets/images/dota2.webp";
@@ -10,7 +10,7 @@ import hon from "../assets/images/hon.jpg";
 import AirMech  from "../assets/images/AirMech.jpg";
 import strife from "../assets/images/strife.jpg";
 import vainglory from "../assets/images/vainglory.jpg";
-
+import { CiHeart } from "react-icons/ci";
 
 
 const juegosData = [
@@ -107,7 +107,7 @@ const BodyJogos = () => {
 
   return (
     <div className={styles.catalogo}>
-      <h2 className={styles.titulo}>Top 20 Mejores MOBAs</h2>
+      <h2 className={styles.titulo}>Top 10 Melhores MOBAs</h2>
       <div className={styles.listaJuegos}>
         {juegosData.map((juego) => (
           <div
